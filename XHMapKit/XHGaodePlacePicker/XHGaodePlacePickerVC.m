@@ -222,7 +222,7 @@
 #pragma mark - 这是当前的位置改变的时候会调用的方法
 -(void)mapView:(MAMapView *)mapView didUpdateUserLocation:(MAUserLocation *)userLocation updatingLocation:(BOOL)updatingLocation{
     if (userLocation) {
-        NSLog(@"当前位置的坐标%f===%f",userLocation.location.coordinate.latitude,userLocation.location.coordinate.longitude);
+//        NSLog(@"当前位置的坐标%f===%f",userLocation.location.coordinate.latitude,userLocation.location.coordinate.longitude);
         if (!isFirst&&_center.latitude == 0) {
             [self creatSearchWithlatiude:mapView.centerCoordinate.latitude withLongitude:mapView.centerCoordinate.longitude];
             
@@ -270,7 +270,8 @@
 - (void)onPOISearchDone:(AMapPOISearchBaseRequest *)request response:(AMapPOISearchResponse *)response
 {
     if(response.pois.count == 0)
-    {    NSLog(@"没有搜到结果哦亲");
+    {
+//        NSLog(@"没有搜到结果哦亲");
         //return;
     }
     if (isRoundSearch) {

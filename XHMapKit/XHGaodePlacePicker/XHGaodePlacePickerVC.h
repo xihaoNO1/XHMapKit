@@ -6,11 +6,11 @@
 //  Copyright © 2016年 com.jianghu. All rights reserved.
 //
 
-#import "JHBaseVC.h"
+#import <UIKit/UIKit.h>
 #import <CoreLocation/CoreLocation.h>
 #import "XHLocationInfo.h"
 
-@interface XHGaodePlacePickerVC : JHBaseVC
+@interface XHGaodePlacePickerVC : UIViewController
 
 /**
  初始化高德选择器

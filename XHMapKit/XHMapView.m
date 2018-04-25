@@ -152,9 +152,9 @@ static char MAPointAnnotation_imgStr;
     if(response.regeocode != nil)
     {
         NSArray *tempArr = response.regeocode.roads;
-        NSLog(@"%@",[tempArr[0] name]);
+//        NSLog(@"%@",[tempArr[0] name]);
         NSArray *tempArr1 = response.regeocode.pois;
-        NSLog(@"%@",[tempArr1[0] name]);
+//        NSLog(@"%@",[tempArr1[0] name]);
         if (self.getRoadBlock) {
             self.getRoadBlock([tempArr1[0] name], [tempArr[0] name]);
         }
@@ -474,7 +474,7 @@ static char MAPointAnnotation_imgStr;
     }
 }
 - (void)AMapSearchRequest:(id)request didFailWithError:(NSError *)error{
-    NSLog(@"%@",error.localizedDescription);
+//    NSLog(@"%@",error.localizedDescription);
 }
 #pragma mark=====路径规划代理方法============
 - (void)onRouteSearchDone:(AMapRouteSearchBaseRequest *)request response:(AMapRouteSearchResponse *)response{
