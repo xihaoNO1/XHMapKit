@@ -25,7 +25,6 @@
     void(^searchFailure)(NSString *error);;
     //高德搜索
     AMapSearchAPI * _gaodeSearch;
-    AMapLocationManager *_amapLocationManager;
     //google地图搜索
     GMSPlacesClient *_googleSearchClient;
     void(^gmsSearchSuccess)(XHLocationInfo *model);

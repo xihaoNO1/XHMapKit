@@ -15,6 +15,7 @@
 #import <AMapLocationKit/AMapLocationKit.h>
 #import <AMapFoundationKit/AMapFoundationKit.h>
 
+
 @implementation XHMapKitManager
 static XHMapKitManager *_instance = nil;
 + (instancetype)shareManager{
@@ -55,7 +56,7 @@ static XHMapKitManager *_instance = nil;
                     // 修改谷歌地图控制器的导航栏
                     UINavigationController *nav = (UINavigationController *)vc;
                     [nav.navigationBar setBackgroundImage:[self imageWithColor:self.theme_color] forBarMetrics: UIBarMetricsDefault];
-                    [nav.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor whiteColor],NSFontAttributeName:FONT(18)}];
+                    [nav.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor whiteColor],NSFontAttributeName:[UIFont systemFontOfSize:18]}];
                     nav.navigationBar.shadowImage = [[UIImage alloc] init];
                     break;
                 }
